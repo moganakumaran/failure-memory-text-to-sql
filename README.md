@@ -2,7 +2,7 @@
 
 **A Compute-Fair, Corrected-Label Evaluation**
 
-Mogana Kumaran Sivaraman — Gap Inc., San Francisco, CA, USA
+Mogana Kumaran Sivaraman — Independent Researcher, San Francisco, CA, USA
 
 Status: manuscript in preparation for arXiv (cs.DB) and PVLDB submission. This repository is the public reproducibility package for the paper: frozen protocol, harness and analysis code, task splits, full run traces, and results.
 

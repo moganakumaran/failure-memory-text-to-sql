@@ -1,7 +1,9 @@
 # Failure Memory Does Not Help Text-to-SQL Agents: A Compute-Fair, Corrected-Label Evaluation
 
 **Mogana Kumaran Sivaraman**
-*Gap Inc., San Francisco, CA, USA*
+*Independent Researcher, San Francisco, CA, USA*
+
+*This work was conducted independently by the author and does not reflect the views of any employer.*
 
 **Keywords:** Text-to-SQL; LLM agents; episodic memory; agent evaluation; benchmark label quality; compute-fair comparison; schema drift
 
