@@ -1,0 +1,251 @@
+{
+ "mini_passk_original": {
+  "A0": {
+   "pass^1": 0.5387,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.4948,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.4433,
+   "n_tasks_pass^4": 97
+  },
+  "A1": {
+   "pass^1": 0.5206,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.4725,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.4124,
+   "n_tasks_pass^4": 97
+  },
+  "A2": {
+   "pass^1": 0.4923,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.4416,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.3918,
+   "n_tasks_pass^4": 97
+  },
+  "A3": {
+   "pass^1": 0.6366,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.6048,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.567,
+   "n_tasks_pass^4": 97
+  }
+ },
+ "mini_passk_corrected": {
+  "A0": {
+   "pass^1": 0.6071,
+   "n_tasks_pass^1": 49,
+   "pass^2": 0.551,
+   "n_tasks_pass^2": 49,
+   "pass^4": 0.4898,
+   "n_tasks_pass^4": 49
+  },
+  "A1": {
+   "pass^1": 0.5969,
+   "n_tasks_pass^1": 49,
+   "pass^2": 0.5136,
+   "n_tasks_pass^2": 49,
+   "pass^4": 0.4286,
+   "n_tasks_pass^4": 49
+  },
+  "A2": {
+   "pass^1": 0.5612,
+   "n_tasks_pass^1": 49,
+   "pass^2": 0.4932,
+   "n_tasks_pass^2": 49,
+   "pass^4": 0.4286,
+   "n_tasks_pass^4": 49
+  },
+  "A3": {
+   "pass^1": 0.6071,
+   "n_tasks_pass^1": 49,
+   "pass^2": 0.5612,
+   "n_tasks_pass^2": 49,
+   "pass^4": 0.5102,
+   "n_tasks_pass^4": 49
+  }
+ },
+ "mini_A1_minus_A0_passk": {
+  "pass^2": {
+   "tasks": 97,
+   "diff": -0.0223,
+   "ci95": [
+    -0.0756,
+    0.0309
+   ]
+  },
+  "pass^4": {
+   "tasks": 97,
+   "diff": -0.0309,
+   "ci95": [
+    -0.1031,
+    0.0412
+   ]
+  }
+ },
+ "mini_A1_minus_A0_passk_corrected": {
+  "pass^2": {
+   "tasks": 49,
+   "diff": -0.0374,
+   "ci95": [
+    -0.119,
+    0.0442
+   ]
+  },
+  "pass^4": {
+   "tasks": 49,
+   "diff": -0.0612,
+   "ci95": [
+    -0.1837,
+    0.0612
+   ]
+  }
+ },
+ "rep_passk_original": {
+  "A0": {
+   "pass^1": 0.5825,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.5739,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.567,
+   "n_tasks_pass^4": 97
+  },
+  "A1": {
+   "pass^1": 0.5825,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.5773,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.567,
+   "n_tasks_pass^4": 97
+  },
+  "A3": {
+   "pass^1": 0.5902,
+   "n_tasks_pass^1": 97,
+   "pass^2": 0.5876,
+   "n_tasks_pass^2": 97,
+   "pass^4": 0.5876,
+   "n_tasks_pass^4": 97
+  }
+ },
+ "rep_A1_minus_A0_passk": {
+  "pass^2": {
+   "tasks": 97,
+   "diff": 0.0034,
+   "ci95": [
+    -0.0464,
+    0.0498
+   ]
+  },
+  "pass^4": {
+   "tasks": 97,
+   "diff": 0.0,
+   "ci95": [
+    -0.0515,
+    0.0515
+   ]
+  }
+ },
+ "drift_passk_original": {
+  "A0": {
+   "pass^1": 0.3083,
+   "n_tasks_pass^1": 60,
+   "pass^2": 0.2333,
+   "n_tasks_pass^2": 60,
+   "pass^4": 0.2,
+   "n_tasks_pass^4": 60
+  },
+  "A1": {
+   "pass^1": 0.2625,
+   "n_tasks_pass^1": 60,
+   "pass^2": 0.2056,
+   "n_tasks_pass^2": 60,
+   "pass^4": 0.15,
+   "n_tasks_pass^4": 60
+  },
+  "A4": {
+   "pass^1": 0.2917,
+   "n_tasks_pass^1": 60,
+   "pass^2": 0.2278,
+   "n_tasks_pass^2": 60,
+   "pass^4": 0.1833,
+   "n_tasks_pass^4": 60
+  }
+ },
+ "drift_A4_minus_A0_passk": {
+  "pass^2": {
+   "tasks": 60,
+   "diff": -0.0056,
+   "ci95": [
+    -0.0639,
+    0.05
+   ]
+  },
+  "pass^4": {
+   "tasks": 60,
+   "diff": -0.0167,
+   "ci95": [
+    -0.0833,
+    0.05
+   ]
+  }
+ },
+ "retrieval_mini_A1": {
+  "mini_s2_trajectories": 400,
+  "with_any_retrieval": 364,
+  "with_fingerprint_hit": 9,
+  "embedding_only": 355,
+  "episodes_retrieved_total": 808,
+  "episodes_via_fingerprint": 35,
+  "episodes_via_embedding": 773
+ },
+ "retrieval_rep_A1": {
+  "rep_s2_trajectories": 400,
+  "with_any_retrieval": 184,
+  "with_fingerprint_hit": 13,
+  "embedding_only": 171,
+  "episodes_retrieved_total": 260,
+  "episodes_via_fingerprint": 13,
+  "episodes_via_embedding": 247
+ },
+ "retrieval_mini_A2": {
+  "mini_s2_trajectories": 400,
+  "with_any_retrieval": 373,
+  "with_fingerprint_hit": 0,
+  "embedding_only": 373,
+  "episodes_retrieved_total": 786,
+  "episodes_via_fingerprint": 0,
+  "episodes_via_embedding": 786
+ },
+ "a4_predrift": {
+  "run1": {
+   "trajectories": 60,
+   "episodes_acquired": 22,
+   "pass1_original": 0.3833
+  },
+  "run2": {
+   "trajectories": 60,
+   "episodes_acquired": 17,
+   "pass1_original": 0.35
+  },
+  "run3": {
+   "trajectories": 60,
+   "episodes_acquired": 16,
+   "pass1_original": 0.3833
+  },
+  "run4": {
+   "trajectories": 60,
+   "episodes_acquired": 19,
+   "pass1_original": 0.3667
+  }
+ },
+ "a1_drift_phase": {
+  "trajectories": 240,
+  "episodes_acquired_during_drift": 72
+ },
+ "a4_drift_phase": {
+  "trajectories": 240,
+  "episodes_acquired_during_drift": 0
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "F1": {
+  "undrifted_level_original": {
+   "tasks": 60,
+   "pass1": 0.3917
+  },
+  "undrifted_level_corrected": {
+   "tasks": 60,
+   "pass1": 0.4458
+  },
+  "drifted_level_original": {
+   "tasks": 60,
+   "pass1": 0.3083
+  },
+  "drifted_level_corrected": {
+   "tasks": 60,
+   "pass1": 0.2917
+  },
+  "paired_drift_effect_original": {
+   "tasks": 60,
+   "diff": -0.0833,
+   "ci95": [
+    -0.1833,
+    0.0167
+   ]
+  },
+  "paired_drift_effect_corrected": {
+   "tasks": 60,
+   "diff": -0.1542,
+   "ci95": [
+    -0.2708,
+    -0.0417
+   ]
+  }
+ },
+ "ablation": {
+  "A1_minus_A0_noverifier_original": {
+   "tasks": 97,
+   "diff": -0.0052,
+   "ci95": [
+    -0.0387,
+    0.0258
+   ]
+  },
+  "A1_minus_A0_noverifier_corrected": {
+   "tasks": 49,
+   "diff": 0.0204,
+   "ci95": [
+    -0.0408,
+    0.0816
+   ]
+  },
+  "A0_level_noverifier": {
+   "tasks": 97,
+   "pass1": 0.6237
+  },
+  "A1_level_noverifier": {
+   "tasks": 97,
+   "pass1": 0.6186
+  },
+  "A0_verifier_effect_on_minus_off": {
+   "tasks": 97,
+   "diff": -0.0851,
+   "ci95": [
+    -0.1418,
+    -0.0335
+   ]
+  },
+  "A1_verifier_effect_on_minus_off": {
+   "tasks": 97,
+   "diff": -0.0979,
+   "ci95": [
+    -0.1572,
+    -0.0412
+   ]
+  },
+  "A1_acquisition_noverifier": {
+   "s1_trajectories": 400,
+   "episodes": 10,
+   "unresolved": 1,
+   "rate": 0.9091
+  },
+  "A0_mean_tokens_S2_noverifier": 1348.7,
+  "A1_mean_tokens_S2_noverifier": 1369.0
+ },
+ "spend": {
+  "mini_usd": 17.8367,
+  "calls": 13081,
+  "note": "seeded with mini dry-run cost"
+ }
+}

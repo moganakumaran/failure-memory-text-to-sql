@@ -1,0 +1,117 @@
+{
+ "model": "qwen/qwen-2.5-coder-32b-instruct",
+ "backend": "openrouter",
+ "trajectories_total": 2000,
+ "s2_tasks_paired": 100,
+ "primary_tasks": 97,
+ "recall_control_excluded": [
+  850,
+  1326,
+  1479
+ ],
+ "A0_pass1_primary": 0.5825,
+ "A1_pass1_primary": 0.5825,
+ "A3_pass1_primary": 0.5902,
+ "A1_minus_A0": {
+  "tasks": 97,
+  "A1_pass1": 0.5825,
+  "A0_pass1": 0.5825,
+  "diff": 0.0,
+  "ci95": [
+   -0.0464,
+   0.0464
+  ]
+ },
+ "A3_minus_A0": {
+  "tasks": 97,
+  "A3_pass1": 0.5902,
+  "A0_pass1": 0.5825,
+  "diff": 0.0077,
+  "ci95": [
+   -0.0644,
+   0.0825
+  ]
+ },
+ "A3_minus_A1": {
+  "tasks": 97,
+  "A3_pass1": 0.5902,
+  "A1_pass1": 0.5825,
+  "diff": 0.0077,
+  "ci95": [
+   -0.0799,
+   0.0954
+  ]
+ },
+ "corrected_subset": {
+  "tasks": 49,
+  "A0_pass1": 0.4541,
+  "A1_pass1": 0.4847,
+  "A3_pass1": 0.4949,
+  "A1_minus_A0": {
+   "tasks": 49,
+   "A1_pass1": 0.4847,
+   "A0_pass1": 0.4541,
+   "diff": 0.0306,
+   "ci95": [
+    0.0,
+    0.0816
+   ]
+  },
+  "A3_minus_A0": {
+   "tasks": 49,
+   "A3_pass1": 0.4949,
+   "A0_pass1": 0.4541,
+   "diff": 0.0408,
+   "ci95": [
+    -0.0408,
+    0.1224
+   ]
+  },
+  "A3_minus_A1": {
+   "tasks": 49,
+   "A3_pass1": 0.4949,
+   "A1_pass1": 0.4847,
+   "diff": 0.0102,
+   "ci95": [
+    -0.0816,
+    0.102
+   ]
+  }
+ },
+ "acquisition": {
+  "s1_trajectories": 400,
+  "episodes": 27,
+  "unresolved": 178,
+  "rate": 0.1317
+ },
+ "A0_S2": {
+  "n": 400,
+  "mean_tokens": 1517.8,
+  "mean_attempts": 1.79,
+  "mean_latency_s": 6.2
+ },
+ "A1_S2": {
+  "n": 400,
+  "mean_tokens": 1614.0,
+  "mean_attempts": 1.76,
+  "mean_latency_s": 6.3
+ },
+ "A3_S2": {
+  "n": 400,
+  "mean_tokens": 1340.4,
+  "mean_attempts": 1.54,
+  "mean_latency_s": 4.1
+ },
+ "A3_cap": {
+  "cap_tokens": 1614,
+  "mean_tokens": 1340.4,
+  "cap_fallback": 356,
+  "cap_mercy": 88,
+  "n": 400
+ },
+ "spend": {
+  "usd": 2.3684,
+  "calls": 5804,
+  "cap_usd": 10
+ }
+}
