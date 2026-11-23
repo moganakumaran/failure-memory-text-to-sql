@@ -168,7 +168,7 @@ Under a frozen protocol, at matched compute, against both original and audited l
 
 ## Artifact availability
 
-The study artifacts are released in a public repository accompanying this paper [repository URL to be inserted at release], containing the frozen protocol and its dated amendments (A1–A14), the substrate specification and frozen manifest, the repeated-failure and drift splits, the full run traces and episode journals, the harness and analysis code, and the complete prompt set including the verifier prompt. A DOI-minted archival copy will follow. The BIRD benchmark and the corrected labels of Jin et al. are third-party artifacts used under their respective licenses and are not redistributed.
+The study artifacts are released in a public repository accompanying this paper (https://github.com/moganakumaran/failure-memory-text-to-sql), containing the frozen protocol and its dated amendments (A1–A14), the substrate specification and frozen manifest, the repeated-failure and drift splits, the full run traces and episode journals, the harness and analysis code, and the complete prompt set including the verifier prompt. A DOI-minted archival copy will follow. The BIRD benchmark and the corrected labels of Jin et al. are third-party artifacts used under their respective licenses and are not redistributed.
 
 ## References
 
