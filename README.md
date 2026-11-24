@@ -19,7 +19,7 @@ Headline results (paired pass@1, 97 primary tasks, 4 runs per task per arm):
 | Generate-and-select (A3) − A0 | +9.8 pts (+4.1…+16.0) | 0.0 pts (−8.2…+8.2) |
 | Replication on Qwen2.5-Coder-32B: A1 − A0 | exactly 0.0 pts (−4.6…+4.6) | +3.1 pts |
 | Paired drift effect (same 60 tasks, A0) | −8.3 pts (−18.3…+1.7) | −8.3 pts (−17.5…+0.4), drift-adjusted golds |
-| Stale (frozen) memory under silent drift: A4 − A0 | exactly 0.0 pts | −1.3 pts (−6.3…+3.8), drift-adjusted |
+| Stale (frozen) memory under silent drift: A4 − A0 | exactly 0.0 pts | +1.5 pts (−3.8…+6.1), drift-adjusted |
 | Store-transplant ablation (A15): A1-T − A0, verifier off, full store | −2.3 pts (−6.4…+1.6) | +2.0 pts |
 
 Memory acquisition was healthy (100 episodes from 177 observed failures, rate 0.565), so the null is not an empty-store artifact. A verifier ablation further shows the base agent's self-verifier is a net harm (−8.5 to −9.8 points) and that the memory null persists without it — including, per Amendment A15, when the verifier-off agent is given a full transplanted store (23–28 episodes per run), so store size was not the binding constraint.
