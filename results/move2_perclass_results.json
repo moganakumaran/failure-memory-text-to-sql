@@ -1,0 +1,1067 @@
+{
+ "question": "Per-failure-class A1-A0 (memory effect) on the 97 primary repeated-failure tasks",
+ "grouping_rule": "S2 task grouped by the reconciled class of its paired S1 task's failure (coding pass first; journal fingerprint class as fallback); S1 tasks with no acquired episode in any A1 S1 run form the 'no episode' stratum.",
+ "validation_gate": {
+  "overall_A1-A0": {
+   "tasks": 97,
+   "A1_pass1": 0.5206,
+   "A0_pass1": 0.5387,
+   "diff": -0.018,
+   "ci95": [
+    -0.0567,
+    0.0206
+   ]
+  },
+  "overall_A2-A0": {
+   "tasks": 97,
+   "A2_pass1": 0.4923,
+   "A0_pass1": 0.5387,
+   "diff": -0.0464,
+   "ci95": [
+    -0.0954,
+    0.0
+   ]
+  },
+  "recombined_A1-A0": -0.018,
+  "recombined_A2-A0": -0.0464,
+  "published": {
+   "A1-A0": -0.018,
+   "A2-A0": -0.0464
+  },
+  "passed": true
+ },
+ "coverage": {
+  "of_97": {
+   "human": 45,
+   "no_episode": 51,
+   "journal": 1
+  },
+  "s1_episodes_total": 100,
+  "s1_qids_with_episode": 47,
+  "journal_S1_classes": {
+   "F6": 100
+  }
+ },
+ "group_sizes": {
+  "F1": 1,
+  "F3": 5,
+  "F4": 8,
+  "F5": 8,
+  "F6": 2,
+  "F7-label": 8,
+  "F9": 2,
+  "NONE/OTHER": 12,
+  "no episode": 51
+ },
+ "mini_A1-A0_original_by_class": {
+  "F1": {
+   "tasks": 1,
+   "A1_pass1": 0.0,
+   "A0_pass1": 0.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F3": {
+   "tasks": 5,
+   "A1_pass1": 0.8,
+   "A0_pass1": 0.8,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 8,
+   "A1_pass1": 0.625,
+   "A0_pass1": 0.5625,
+   "diff": 0.0625,
+   "ci95": [
+    0.0,
+    0.1875
+   ]
+  },
+  "F5": {
+   "tasks": 8,
+   "A1_pass1": 0.375,
+   "A0_pass1": 0.4375,
+   "diff": -0.0625,
+   "ci95": [
+    -0.1562,
+    0.0
+   ]
+  },
+  "F6": {
+   "tasks": 2,
+   "A1_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F7-label": {
+   "tasks": 8,
+   "A1_pass1": 0.3438,
+   "A0_pass1": 0.4062,
+   "diff": -0.0625,
+   "ci95": [
+    -0.1562,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 2,
+   "A1_pass1": 0.375,
+   "A0_pass1": 0.5,
+   "diff": -0.125,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 12,
+   "A1_pass1": 0.4792,
+   "A0_pass1": 0.5833,
+   "diff": -0.1042,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "no episode": {
+   "tasks": 51,
+   "A1_pass1": 0.5539,
+   "A0_pass1": 0.549,
+   "diff": 0.0049,
+   "ci95": [
+    -0.049,
+    0.0686
+   ]
+  }
+ },
+ "mini_A1-A0_corrected_by_class": {
+  "F1": null,
+  "F3": {
+   "tasks": 3,
+   "A1_pass1": 0.8333,
+   "A0_pass1": 1.0,
+   "diff": -0.1667,
+   "ci95": [
+    -0.5,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 6,
+   "A1_pass1": 0.75,
+   "A0_pass1": 0.5833,
+   "diff": 0.1667,
+   "ci95": [
+    0.0,
+    0.3333
+   ]
+  },
+  "F5": {
+   "tasks": 4,
+   "A1_pass1": 0.375,
+   "A0_pass1": 0.4375,
+   "diff": -0.0625,
+   "ci95": [
+    -0.1875,
+    0.0
+   ]
+  },
+  "F6": {
+   "tasks": 1,
+   "A1_pass1": 1.0,
+   "A0_pass1": 1.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F7-label": {
+   "tasks": 3,
+   "A1_pass1": 0.4167,
+   "A0_pass1": 0.5,
+   "diff": -0.0833,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 1,
+   "A1_pass1": 0.75,
+   "A0_pass1": 1.0,
+   "diff": -0.25,
+   "ci95": [
+    -0.25,
+    -0.25
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 4,
+   "A1_pass1": 0.75,
+   "A0_pass1": 0.75,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "no episode": {
+   "tasks": 27,
+   "A1_pass1": 0.5463,
+   "A0_pass1": 0.5556,
+   "diff": -0.0093,
+   "ci95": [
+    -0.0741,
+    0.0556
+   ]
+  }
+ },
+ "mini_A2-A0_original_by_class": {
+  "F1": {
+   "tasks": 1,
+   "A2_pass1": 0.0,
+   "A0_pass1": 0.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F3": {
+   "tasks": 5,
+   "A2_pass1": 0.75,
+   "A0_pass1": 0.8,
+   "diff": -0.05,
+   "ci95": [
+    -0.15,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 8,
+   "A2_pass1": 0.5938,
+   "A0_pass1": 0.5625,
+   "diff": 0.0312,
+   "ci95": [
+    0.0,
+    0.0938
+   ]
+  },
+  "F5": {
+   "tasks": 8,
+   "A2_pass1": 0.2812,
+   "A0_pass1": 0.4375,
+   "diff": -0.1562,
+   "ci95": [
+    -0.375,
+    0.0312
+   ]
+  },
+  "F6": {
+   "tasks": 2,
+   "A2_pass1": 0.0,
+   "A0_pass1": 0.5,
+   "diff": -0.5,
+   "ci95": [
+    -1.0,
+    0.0
+   ]
+  },
+  "F7-label": {
+   "tasks": 8,
+   "A2_pass1": 0.25,
+   "A0_pass1": 0.4062,
+   "diff": -0.1562,
+   "ci95": [
+    -0.4062,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 2,
+   "A2_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 12,
+   "A2_pass1": 0.5625,
+   "A0_pass1": 0.5833,
+   "diff": -0.0208,
+   "ci95": [
+    -0.1042,
+    0.0625
+   ]
+  },
+  "no episode": {
+   "tasks": 51,
+   "A2_pass1": 0.5343,
+   "A0_pass1": 0.549,
+   "diff": -0.0147,
+   "ci95": [
+    -0.0735,
+    0.049
+   ]
+  }
+ },
+ "mini_A2-A0_corrected_by_class": {
+  "F1": null,
+  "F3": {
+   "tasks": 3,
+   "A2_pass1": 0.6667,
+   "A0_pass1": 1.0,
+   "diff": -0.3333,
+   "ci95": [
+    -0.75,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 6,
+   "A2_pass1": 0.7083,
+   "A0_pass1": 0.5833,
+   "diff": 0.125,
+   "ci95": [
+    0.0,
+    0.2917
+   ]
+  },
+  "F5": {
+   "tasks": 4,
+   "A2_pass1": 0.25,
+   "A0_pass1": 0.4375,
+   "diff": -0.1875,
+   "ci95": [
+    -0.5625,
+    0.125
+   ]
+  },
+  "F6": {
+   "tasks": 1,
+   "A2_pass1": 1.0,
+   "A0_pass1": 1.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F7-label": {
+   "tasks": 3,
+   "A2_pass1": 0.4167,
+   "A0_pass1": 0.5,
+   "diff": -0.0833,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 1,
+   "A2_pass1": 1.0,
+   "A0_pass1": 1.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 4,
+   "A2_pass1": 0.6875,
+   "A0_pass1": 0.75,
+   "diff": -0.0625,
+   "ci95": [
+    -0.1875,
+    0.0
+   ]
+  },
+  "no episode": {
+   "tasks": 27,
+   "A2_pass1": 0.5278,
+   "A0_pass1": 0.5556,
+   "diff": -0.0278,
+   "ci95": [
+    -0.0833,
+    0.0185
+   ]
+  }
+ },
+ "rep_A1-A0_original_by_class": {
+  "F1": {
+   "tasks": 1,
+   "A1_pass1": 0.0,
+   "A0_pass1": 0.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F3": {
+   "tasks": 5,
+   "A1_pass1": 0.4,
+   "A0_pass1": 0.6,
+   "diff": -0.2,
+   "ci95": [
+    -0.6,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 8,
+   "A1_pass1": 0.8438,
+   "A0_pass1": 0.7812,
+   "diff": 0.0625,
+   "ci95": [
+    0.0,
+    0.1875
+   ]
+  },
+  "F5": {
+   "tasks": 8,
+   "A1_pass1": 0.25,
+   "A0_pass1": 0.25,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F6": {
+   "tasks": 2,
+   "A1_pass1": 1.0,
+   "A0_pass1": 0.875,
+   "diff": 0.125,
+   "ci95": [
+    0.0,
+    0.25
+   ]
+  },
+  "F7-label": {
+   "tasks": 8,
+   "A1_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 2,
+   "A1_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 12,
+   "A1_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    -0.25,
+    0.25
+   ]
+  },
+  "no episode": {
+   "tasks": 51,
+   "A1_pass1": 0.6422,
+   "A0_pass1": 0.6373,
+   "diff": 0.0049,
+   "ci95": [
+    -0.0539,
+    0.0588
+   ]
+  }
+ },
+ "rep_A1-A0_corrected_by_class": {
+  "F1": null,
+  "F3": {
+   "tasks": 3,
+   "A1_pass1": 0.3333,
+   "A0_pass1": 0.3333,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F4": {
+   "tasks": 6,
+   "A1_pass1": 0.625,
+   "A0_pass1": 0.5417,
+   "diff": 0.0833,
+   "ci95": [
+    0.0,
+    0.25
+   ]
+  },
+  "F5": {
+   "tasks": 4,
+   "A1_pass1": 0.5,
+   "A0_pass1": 0.5,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F6": {
+   "tasks": 1,
+   "A1_pass1": 0.0,
+   "A0_pass1": 0.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F7-label": {
+   "tasks": 3,
+   "A1_pass1": 0.3333,
+   "A0_pass1": 0.3333,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "F9": {
+   "tasks": 1,
+   "A1_pass1": 0.0,
+   "A0_pass1": 0.0,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "NONE/OTHER": {
+   "tasks": 4,
+   "A1_pass1": 0.25,
+   "A0_pass1": 0.25,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "no episode": {
+   "tasks": 27,
+   "A1_pass1": 0.5556,
+   "A0_pass1": 0.5185,
+   "diff": 0.037,
+   "ci95": [
+    0.0,
+    0.1111
+   ]
+  }
+ },
+ "overall_corrected_A1-A0_49": {
+  "tasks": 49,
+  "A1_pass1": 0.5969,
+  "A0_pass1": 0.6071,
+  "diff": -0.0102,
+  "ci95": [
+   -0.0612,
+   0.0408
+  ]
+ },
+ "ambiguity_list": [
+  {
+   "s2_qid": 2,
+   "s1_qid": 4,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 11,
+   "s1_qid": 23,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 14,
+   "s1_qid": 29,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 76,
+   "s1_qid": 87,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 100,
+   "s1_qid": 190,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 115,
+   "s1_qid": 185,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 138,
+   "s1_qid": 128,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 154,
+   "s1_qid": 112,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 162,
+   "s1_qid": 107,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 208,
+   "s1_qid": 329,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 235,
+   "s1_qid": 325,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 242,
+   "s1_qid": 281,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 251,
+   "s1_qid": 212,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 273,
+   "s1_qid": 218,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 327,
+   "s1_qid": 293,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 356,
+   "s1_qid": 372,
+   "issue": "no_coding_label",
+   "detail": "episode acquired but no coding-pass item; journal class F6 used"
+  },
+  {
+   "s2_qid": 356,
+   "s1_qid": 372,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 375,
+   "s1_qid": 379,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 402,
+   "s1_qid": 368,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 453,
+   "s1_qid": 358,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 459,
+   "s1_qid": 461,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 544,
+   "s1_qid": 581,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 545,
+   "s1_qid": 672,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 583,
+   "s1_qid": 604,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 682,
+   "s1_qid": 541,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 800,
+   "s1_qid": 767,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 812,
+   "s1_qid": 753,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 839,
+   "s1_qid": 819,
+   "issue": "secondary_class_present",
+   "detail": "primary=F1, secondary=F6; grouped by primary"
+  },
+  {
+   "s2_qid": 839,
+   "s1_qid": 819,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 844,
+   "s1_qid": 782,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 924,
+   "s1_qid": 856,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1037,
+   "s1_qid": 1148,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1094,
+   "s1_qid": 1076,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1096,
+   "s1_qid": 1039,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1181,
+   "s1_qid": 1175,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1209,
+   "s1_qid": 1208,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1218,
+   "s1_qid": 1169,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1272,
+   "s1_qid": 1168,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1313,
+   "s1_qid": 1441,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 3/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1314,
+   "s1_qid": 1375,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1476,
+   "s1_qid": 1481,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1496,
+   "s1_qid": 1478,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 1/4 A1 S1 runs; grouped as has-episode"
+  },
+  {
+   "s2_qid": 1499,
+   "s1_qid": 1487,
+   "issue": "partial_acquisition",
+   "detail": "episode acquired in 2/4 A1 S1 runs; grouped as has-episode"
+  }
+ ],
+ "group_members": {
+  "F1": [
+   839
+  ],
+  "F3": [
+   115,
+   138,
+   162,
+   544,
+   1181
+  ],
+  "F4": [
+   459,
+   545,
+   583,
+   1037,
+   1096,
+   1195,
+   1205,
+   1476
+  ],
+  "F5": [
+   2,
+   76,
+   100,
+   242,
+   327,
+   402,
+   812,
+   1499
+  ],
+  "F6": [
+   356,
+   375
+  ],
+  "F7-label": [
+   11,
+   208,
+   453,
+   524,
+   924,
+   1314,
+   1490,
+   1496
+  ],
+  "F9": [
+   154,
+   1094
+  ],
+  "NONE/OTHER": [
+   14,
+   235,
+   251,
+   273,
+   401,
+   682,
+   800,
+   844,
+   1209,
+   1218,
+   1272,
+   1313
+  ],
+  "no episode": [
+   3,
+   28,
+   34,
+   35,
+   71,
+   77,
+   89,
+   92,
+   168,
+   183,
+   199,
+   214,
+   230,
+   340,
+   419,
+   537,
+   540,
+   557,
+   578,
+   680,
+   735,
+   748,
+   781,
+   797,
+   831,
+   855,
+   868,
+   900,
+   909,
+   920,
+   921,
+   923,
+   1040,
+   1055,
+   1084,
+   1088,
+   1103,
+   1114,
+   1155,
+   1228,
+   1243,
+   1319,
+   1351,
+   1352,
+   1368,
+   1415,
+   1426,
+   1472,
+   1473,
+   1475,
+   1495
+  ]
+ },
+ "group_source_by_qid": {
+  "2": "human",
+  "3": "no_episode",
+  "11": "human",
+  "14": "human",
+  "28": "no_episode",
+  "34": "no_episode",
+  "35": "no_episode",
+  "71": "no_episode",
+  "76": "human",
+  "77": "no_episode",
+  "89": "no_episode",
+  "92": "no_episode",
+  "100": "human",
+  "115": "human",
+  "138": "human",
+  "154": "human",
+  "162": "human",
+  "168": "no_episode",
+  "183": "no_episode",
+  "199": "no_episode",
+  "208": "human",
+  "214": "no_episode",
+  "230": "no_episode",
+  "235": "human",
+  "242": "human",
+  "251": "human",
+  "273": "human",
+  "327": "human",
+  "340": "no_episode",
+  "356": "journal",
+  "375": "human",
+  "401": "human",
+  "402": "human",
+  "419": "no_episode",
+  "453": "human",
+  "459": "human",
+  "524": "human",
+  "537": "no_episode",
+  "540": "no_episode",
+  "544": "human",
+  "545": "human",
+  "557": "no_episode",
+  "578": "no_episode",
+  "583": "human",
+  "680": "no_episode",
+  "682": "human",
+  "735": "no_episode",
+  "748": "no_episode",
+  "781": "no_episode",
+  "797": "no_episode",
+  "800": "human",
+  "812": "human",
+  "831": "no_episode",
+  "839": "human",
+  "844": "human",
+  "855": "no_episode",
+  "868": "no_episode",
+  "900": "no_episode",
+  "909": "no_episode",
+  "920": "no_episode",
+  "921": "no_episode",
+  "923": "no_episode",
+  "924": "human",
+  "1037": "human",
+  "1040": "no_episode",
+  "1055": "no_episode",
+  "1084": "no_episode",
+  "1088": "no_episode",
+  "1094": "human",
+  "1096": "human",
+  "1103": "no_episode",
+  "1114": "no_episode",
+  "1155": "no_episode",
+  "1181": "human",
+  "1195": "human",
+  "1205": "human",
+  "1209": "human",
+  "1218": "human",
+  "1228": "no_episode",
+  "1243": "no_episode",
+  "1272": "human",
+  "1313": "human",
+  "1314": "human",
+  "1319": "no_episode",
+  "1351": "no_episode",
+  "1352": "no_episode",
+  "1368": "no_episode",
+  "1415": "no_episode",
+  "1426": "no_episode",
+  "1472": "no_episode",
+  "1473": "no_episode",
+  "1475": "no_episode",
+  "1476": "human",
+  "1490": "human",
+  "1495": "no_episode",
+  "1496": "human",
+  "1499": "human"
+ }
+}

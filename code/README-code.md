@@ -53,6 +53,12 @@ results, and datasets live in the companion project repository.
   (§5.2); outputs in `results/fanout_crosscheck_results.json` and
   `results/fanout_split_results.json`, memo in
   `results/fanout_crosscheck_memo.md`.
+- `analysis_move2_perclass.py` — post-hoc per-failure-class analysis
+  (2026-11-24) of the stored repeated-split traces: A1−A0 split by the
+  paired Session-1 failure's class (human coding-pass labels where
+  available); outputs in `results/move2_perclass_results.json`, memo in
+  `results/move2_perclass_memo.md`. Analysis record only; not reported
+  in the paper.
 - `analysis_fixes.py` — offline analyses: pass^k (§5.7), fingerprint retrieval
   rates (§5.3), drift-arm acquisition counts.
 - `make_figure1.py`, `make_figure2.py` — the paper's figures.
