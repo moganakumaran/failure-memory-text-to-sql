@@ -43,6 +43,10 @@ results, and datasets live in the companion project repository.
 - `mvr_analysis6_rescore.py` — PVLDB revision: drift-adjusted corrected-gold
   re-scoring of the stored drift trajectories (§5.4); supersedes the
   unadjusted corrected-label drift view in `analysis_a14.py`.
+- `analysis_b02_subset.py` — post-hoc re-analysis (2026-11-24) of the stored
+  Stage 2 traces: original-label contrasts restricted to the 49-task
+  corrected subset (§5.2); outputs in `results/b02_subset_results.json`,
+  memo in `results/b02_subset_memo.md`.
 - `analysis_fixes.py` — offline analyses: pass^k (§5.7), fingerprint retrieval
   rates (§5.3), drift-arm acquisition counts.
 - `make_figure1.py`, `make_figure2.py` — the paper's figures.

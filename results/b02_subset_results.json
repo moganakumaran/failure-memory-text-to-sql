@@ -1,0 +1,127 @@
+{
+ "validation": {
+  "V1_A3-A0_original_97": {
+   "tasks": 97,
+   "A3_pass1": 0.6366,
+   "A0_pass1": 0.5387,
+   "diff": 0.0979,
+   "ci95": [
+    0.0412,
+    0.1598
+   ]
+  },
+  "V2_A3-A0_corrected_49": {
+   "tasks": 49,
+   "A3_pass1": 0.6071,
+   "A0_pass1": 0.6071,
+   "diff": 0.0,
+   "ci95": [
+    -0.0816,
+    0.0816
+   ]
+  },
+  "both_reproduced": true
+ },
+ "corrected_subset_qids": [
+  11,
+  28,
+  77,
+  89,
+  92,
+  100,
+  115,
+  138,
+  168,
+  208,
+  230,
+  242,
+  273,
+  327,
+  340,
+  356,
+  402,
+  459,
+  537,
+  544,
+  557,
+  578,
+  682,
+  781,
+  797,
+  800,
+  868,
+  909,
+  1037,
+  1040,
+  1084,
+  1088,
+  1094,
+  1096,
+  1103,
+  1114,
+  1155,
+  1195,
+  1205,
+  1209,
+  1243,
+  1351,
+  1352,
+  1368,
+  1426,
+  1472,
+  1473,
+  1476,
+  1490
+ ],
+ "original_labels_on_corrected_subset_49": {
+  "A3-A0": {
+   "tasks": 49,
+   "A3_pass1": 0.5816,
+   "A0_pass1": 0.4796,
+   "diff": 0.102,
+   "ci95": [
+    0.0153,
+    0.199
+   ]
+  },
+  "A3-A1": {
+   "tasks": 49,
+   "A3_pass1": 0.5816,
+   "A1_pass1": 0.4694,
+   "diff": 0.1122,
+   "ci95": [
+    0.0204,
+    0.2143
+   ]
+  },
+  "A1-A0": {
+   "tasks": 49,
+   "A1_pass1": 0.4694,
+   "A0_pass1": 0.4796,
+   "diff": -0.0102,
+   "ci95": [
+    -0.051,
+    0.0306
+   ]
+  },
+  "A2-A0": {
+   "tasks": 49,
+   "A2_pass1": 0.4541,
+   "A0_pass1": 0.4796,
+   "diff": -0.0255,
+   "ci95": [
+    -0.0765,
+    0.0204
+   ]
+  }
+ },
+ "decomposition_A3-A0": {
+  "original_97": 0.0979,
+  "original_49": 0.102,
+  "corrected_49": 0.0,
+  "subset_component_pts": 0.41,
+  "label_component_pts": -10.2,
+  "total_change_pts": -9.79,
+  "note": "total = subset component (97 -> 49 tasks, original labels) + label component (original -> corrected, same 49 tasks). Components are point-estimate arithmetic on nested contrasts."
+ }
+}
