@@ -71,7 +71,7 @@ def run_task(call, db_path, task, *, arm, store=None, frozen_store=None,
         if retrieval_pool is not None:
             return retrieval_pool
         return active_store.episodes if active_store is not None else []
-    if arm in ("A1", "A2", "A4") :
+    if arm in ("A1", "A2", "A4", "A1-T") :
         eps = L.EpisodeStore()
         eps.episodes = pool_eps()
         got = eps.retrieve_embedding(question=task["question"], schema_elements=set(),
@@ -101,7 +101,7 @@ def run_task(call, db_path, task, *, arm, store=None, frozen_store=None,
                       f"Write a corrected single SQLite query for the question: {task['question']}\n"
                       f"Use only this schema:\n{L.schema_text(db_path)}\nOutput only the SQL.")
             # fingerprint re-retrieval after an observed failure (A1/A4 only)
-            if arm in ("A1", "A4") and failures:
+            if arm in ("A1", "A4", "A1-T") and failures:
                 eps = L.EpisodeStore(); eps.episodes = pool_eps()
                 hits, stale = eps.retrieve_fingerprint(
                     failure_sig=L.error_signature(err),
@@ -280,6 +280,11 @@ def main():
                     help="Amendment A14 ablation: disable the self-verifier")
     ap.add_argument("--undrifted", action="store_true",
                     help="Amendment A14 F1 control: with --split drift, run A0 on the ORIGINAL databases (phase 'undrifted')")
+    ap.add_argument("--transplant", action="store_true",
+                    help="Amendment A15: arm A1-T, repeated split, Session 2 only, verifier OFF, "
+                         "episode store transplanted from the same run index's verifier-on A1 "
+                         "Session-1 journal (episodes_stage1_A1_run{n}.jsonl, phase S1). "
+                         "Loads only S6-legitimate journaled episodes as-is; no gold anywhere.")
     ap.add_argument("--out", default="pilot")
     args = ap.parse_args()
     call = L.make_caller(args.backend)
@@ -313,7 +318,39 @@ def main():
 
     run_ids = [args.only_run] if args.only_run else list(range(1, args.runs + 1))
     try:
-        if args.split == "repeated":
+        if args.split == "repeated" and args.transplant:
+            # Amendment A15: A1-T store-transplant verifier ablation.
+            # Session 2 ONLY, verifier OFF (identical to the A14 --no-verifier
+            # A1 ablation) except the retrieval store is transplanted from the
+            # SAME run index's verifier-on A1 Session-1 journal. Episodes are
+            # loaded as-is from that journal (S6-legitimate acquisitions only;
+            # nothing fabricated or repaired; no gold). S2 acquisitions mirror
+            # A14 exactly: shadow store, counted, never retrieved.
+            pairs = list(csv.DictReader(open(HF / "splits_repeated.csv")))
+            if args.limit_pairs:
+                pairs = pairs[:args.limit_pairs]
+            for run in run_ids:
+                rid = f"run{run}"
+                src = HF / f"episodes_stage1_A1_run{run}.jsonl"
+                tstore = _rebuild_store(src, "A1", rid, "S1")
+                frozen = list(tstore.episodes)
+                start_size = len(frozen)
+                shadow = L.EpisodeStore()
+                seen2 = 0
+                for p in pairs:  # Phase 2 only; no Session 1 is run
+                    t = DEV[int(p["session2_qid"])]
+                    if ("A1-T", rid, "S2", t["question_id"]) in done:
+                        continue
+                    dbp = L.DBROOT / t["db_id"] / f"{t['db_id']}.sqlite"
+                    emit(run_task(call, dbp, t, arm="A1-T", store=shadow,
+                                  frozen_store=frozen, run_id=rid,
+                                  verifier=False, acquire=True), "S2")
+                    seen2 = journal_new(shadow, "A1-T", rid, "S2", seen2)
+                print(f"TRANSPLANT {rid}: store_size_S2_start={start_size} "
+                      f"shadow_acquired_S2={len(shadow.episodes)} "
+                      f"store_size_S2_end={start_size + len(shadow.episodes)} "
+                      f"(retrieval pool stayed frozen at {start_size})", flush=True)
+        elif args.split == "repeated":
             pairs = list(csv.DictReader(open(HF / "splits_repeated.csv")))
             if args.limit_pairs:
                 pairs = pairs[:args.limit_pairs]

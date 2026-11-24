@@ -1,5 +1,7 @@
 # Paper #1 Critique Fixes — Results Memo
 
+> **Correction note (added 2026-11-23, PVLDB minimum viable revision):** the corrected-label paired drift effect reported in §F1 below (−15.4 pts, "significant") was later shown to be a **scoring artifact** and is superseded. It executed Jin et al.'s corrected SQL — written against the original schemas — unadjusted on the drifted databases, where it fails to execute at all on 22 of 23 rename tasks, so corrected passes on the drifted side were mechanically false. Re-scored with drift-adjusted corrected golds (Amendment-era analysis A6; see `mvr_analysis6_drift_rescoring.md` in this directory), the corrected paired drift effect is **−8.3 pts (−17.5…+0.4, n.s.)**, identical to the original-label effect. The original-label numbers and all other sections of this memo are unaffected. The memo text below is preserved as the record of the analysis as run.
+
 **Date:** 2026-11-23. **Scope:** the fix package approved after the reviewer-style critique of Draft v1 (Protocol Amendment A14). Runs: gpt-5-mini-2025-08-07, same harness/scoring as the pilot; analysis `hidden_files/analysis_a14.py` → `a14_results.json`, plus offline analyses `hidden_files/analysis_fixes.py` → `fixes_results.json`. Total A14 spend: $2.81 (ledger $17.84 of the $24 cap). Each section maps to the critique item it resolves (file: "Paper 1 Reviewer Critique - Draft v1 - 2026-11-23.md").
 
 ## F1 — The paired drift effect (was: FATAL)

@@ -1,0 +1,443 @@
+{
+ "levels": {
+  "undrifted_A0_corrected_old": {
+   "tasks": 60,
+   "pass1": 0.4458
+  },
+  "undrifted_A0_corrected_new": {
+   "tasks": 60,
+   "pass1": 0.4458
+  },
+  "drifted_A0_corrected_old": {
+   "tasks": 60,
+   "pass1": 0.2917
+  },
+  "drifted_A0_corrected_new": {
+   "tasks": 60,
+   "pass1": 0.3625
+  },
+  "drifted_A1_corrected_old": {
+   "tasks": 60,
+   "pass1": 0.2833
+  },
+  "drifted_A1_corrected_new": {
+   "tasks": 60,
+   "pass1": 0.3167
+  },
+  "drifted_A4_corrected_old": {
+   "tasks": 60,
+   "pass1": 0.3042
+  },
+  "drifted_A4_corrected_new": {
+   "tasks": 60,
+   "pass1": 0.35
+  },
+  "undrifted_A0_original": {
+   "tasks": 60,
+   "pass1": 0.3917
+  },
+  "drifted_A0_original": {
+   "tasks": 60,
+   "pass1": 0.3083
+  }
+ },
+ "contrasts": {
+  "paired_drift_effect_A0_corrected_old": {
+   "tasks": 60,
+   "diff": -0.1542,
+   "ci95": [
+    -0.2667,
+    -0.0417
+   ]
+  },
+  "paired_drift_effect_A0_corrected_new": {
+   "tasks": 60,
+   "diff": -0.0833,
+   "ci95": [
+    -0.175,
+    0.0042
+   ]
+  },
+  "paired_drift_effect_A0_original_sanity": {
+   "tasks": 60,
+   "diff": -0.0833,
+   "ci95": [
+    -0.1833,
+    0.0125
+   ]
+  },
+  "A1_minus_A0_drift_corrected_old": {
+   "tasks": 60,
+   "diff": -0.0083,
+   "ci95": [
+    -0.05,
+    0.0333
+   ]
+  },
+  "A1_minus_A0_drift_corrected_new": {
+   "tasks": 60,
+   "diff": -0.0458,
+   "ci95": [
+    -0.1,
+    0.0083
+   ]
+  },
+  "A4_minus_A0_drift_corrected_old": {
+   "tasks": 60,
+   "diff": 0.0125,
+   "ci95": [
+    -0.0292,
+    0.0542
+   ]
+  },
+  "A4_minus_A0_drift_corrected_new": {
+   "tasks": 60,
+   "diff": -0.0125,
+   "ci95": [
+    -0.0625,
+    0.0375
+   ]
+  },
+  "A4_minus_A1_drift_corrected_old": {
+   "tasks": 60,
+   "diff": 0.0208,
+   "ci95": [
+    -0.0167,
+    0.0667
+   ]
+  },
+  "A4_minus_A1_drift_corrected_new": {
+   "tasks": 60,
+   "diff": 0.0333,
+   "ci95": [
+    -0.0208,
+    0.0917
+   ]
+  },
+  "A1_minus_A0_drift_original_sanity": {
+   "tasks": 60,
+   "diff": -0.0458,
+   "ci95": [
+    -0.0958,
+    0.0083
+   ]
+  },
+  "A4_minus_A0_drift_original_sanity": {
+   "tasks": 60,
+   "diff": -0.0167,
+   "ci95": [
+    -0.0667,
+    0.0292
+   ]
+  },
+  "A4_minus_A1_drift_original_sanity": {
+   "tasks": 60,
+   "diff": 0.0292,
+   "ci95": [
+    -0.0208,
+    0.0792
+   ]
+  },
+  "paired_drift_effect_A0_corrected_old_silent": {
+   "tasks": 33,
+   "diff": 0.0606,
+   "ci95": [
+    -0.053,
+    0.1894
+   ]
+  },
+  "paired_drift_effect_A0_corrected_new_silent": {
+   "tasks": 33,
+   "diff": -0.0985,
+   "ci95": [
+    -0.2424,
+    0.0379
+   ]
+  },
+  "A4_minus_A0_drift_corrected_old_silent": {
+   "tasks": 33,
+   "diff": 0.0227,
+   "ci95": [
+    -0.0455,
+    0.0985
+   ]
+  },
+  "A4_minus_A0_drift_corrected_new_silent": {
+   "tasks": 33,
+   "diff": 0.0152,
+   "ci95": [
+    -0.0379,
+    0.0606
+   ]
+  },
+  "A1_minus_A0_drift_corrected_old_silent": {
+   "tasks": 33,
+   "diff": -0.0152,
+   "ci95": [
+    -0.0909,
+    0.0606
+   ]
+  },
+  "A1_minus_A0_drift_corrected_new_silent": {
+   "tasks": 33,
+   "diff": -0.053,
+   "ci95": [
+    -0.1061,
+    -0.0076
+   ]
+  },
+  "A4_minus_A0_drift_original_silent_sanity": {
+   "tasks": 33,
+   "diff": 0.0,
+   "ci95": [
+    -0.0455,
+    0.0455
+   ]
+  }
+ },
+ "per_operator": {
+  "category_merge": {
+   "tasks": 9,
+   "transform_applied": 2,
+   "transform_identity": 0,
+   "transform_noop_literal_absent": 7,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 9,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 9,
+   "expected_result_changed_tasks": [
+    1471,
+    98
+   ],
+   "rename_validation": {}
+  },
+  "data_unit_change": {
+   "tasks": 9,
+   "transform_applied": 0,
+   "transform_identity": 9,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 9,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 9,
+   "expected_result_changed_tasks": [],
+   "rename_validation": {}
+  },
+  "data_value_recode": {
+   "tasks": 10,
+   "transform_applied": 10,
+   "transform_identity": 0,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 10,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 10,
+   "expected_result_changed_tasks": [
+    717,
+    347,
+    719,
+    859,
+    723,
+    1486,
+    726,
+    366,
+    1493
+   ],
+   "rename_validation": {}
+  },
+  "null_semantics_change": {
+   "tasks": 1,
+   "transform_applied": 0,
+   "transform_identity": 1,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 1,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 1,
+   "expected_result_changed_tasks": [],
+   "rename_validation": {}
+  },
+  "schema_column_rename": {
+   "tasks": 23,
+   "transform_applied": 23,
+   "transform_identity": 0,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 23,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 1,
+   "expected_result_changed_tasks": [
+    5,
+    346,
+    1317,
+    1149,
+    195,
+    12,
+    532,
+    1028,
+    1322,
+    1150,
+    17,
+    349,
+    533,
+    1484,
+    1323,
+    1152,
+    352,
+    1035,
+    201,
+    27,
+    371,
+    1498
+   ],
+   "rename_validation": {
+    "5": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "346": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1317": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1149": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "195": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "12": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "532": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1028": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1322": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1150": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "17": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "349": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "533": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1484": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1323": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1152": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "352": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "25": "PASS (alias-restricted fallback): adjusted result on drifted DB == corrected result on original DB",
+    "1035": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "201": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "27": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "371": "PASS: adjusted result on drifted DB == corrected result on original DB",
+    "1498": "PASS: adjusted result on drifted DB == corrected result on original DB"
+   }
+  },
+  "schema_type_change": {
+   "tasks": 4,
+   "transform_applied": 0,
+   "transform_identity": 4,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 4,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 4,
+   "expected_result_changed_tasks": [],
+   "rename_validation": {}
+  },
+  "temporal_grain_change": {
+   "tasks": 4,
+   "transform_applied": 0,
+   "transform_identity": 4,
+   "transform_noop_literal_absent": 0,
+   "transform_failed": 0,
+   "adjusted_gold_executes_on_drifted": 4,
+   "adjusted_gold_exec_failures": [],
+   "old_gold_executes_on_drifted": 4,
+   "expected_result_changed_tasks": [],
+   "rename_validation": {}
+  }
+ },
+ "validation": {
+  "rescore_old_agreement_transformed_tasks": {
+   "agree": 497,
+   "disagree": 7,
+   "examples": [
+    {
+     "qid": 366,
+     "arm": "A0",
+     "run_id": "run1",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 366,
+     "arm": "A0",
+     "run_id": "run2",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 366,
+     "arm": "A0",
+     "run_id": "run3",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 347,
+     "arm": "A4",
+     "run_id": "run3",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 366,
+     "arm": "A4",
+     "run_id": "run3",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 366,
+     "arm": "A0",
+     "run_id": "run4",
+     "stored_old": false,
+     "rescored_old": true
+    },
+    {
+     "qid": 347,
+     "arm": "A4",
+     "run_id": "run4",
+     "stored_old": false,
+     "rescored_old": true
+    }
+   ]
+  },
+  "identity_task_reexecution_agreement": {
+   "agree": 216,
+   "disagree": 0,
+   "skipped_gold_unexecutable": 0
+  }
+ },
+ "failures": [],
+ "expected_result_changed_all": [
+  5,
+  12,
+  17,
+  27,
+  98,
+  195,
+  201,
+  346,
+  347,
+  349,
+  352,
+  366,
+  371,
+  532,
+  533,
+  717,
+  719,
+  723,
+  726,
+  859,
+  1028,
+  1035,
+  1149,
+  1150,
+  1152,
+  1317,
+  1322,
+  1323,
+  1471,
+  1484,
+  1486,
+  1493,
+  1498
+ ],
+ "n_traces_rescored_new_none": 0
+}

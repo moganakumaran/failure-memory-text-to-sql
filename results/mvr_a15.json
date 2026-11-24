@@ -1,0 +1,127 @@
+{
+ "design": {
+  "arm": "A1-T (store transplant, verifier off, Session 2 only)",
+  "model": "gpt-5-mini-2025-08-07",
+  "trajectories_A1T_S2": 400,
+  "primary_tasks": 97,
+  "comparators": "A14 no-verifier A0/A1 traces reused (not re-run)"
+ },
+ "levels": {
+  "A1T_original": {
+   "tasks": 97,
+   "pass1": 0.6005
+  },
+  "A1T_corrected": {
+   "tasks": 49,
+   "pass1": 0.6173
+  },
+  "A0_noverifier_original": {
+   "tasks": 97,
+   "pass1": 0.6237
+  },
+  "A1_noverifier_original": {
+   "tasks": 97,
+   "pass1": 0.6186
+  }
+ },
+ "primary_contrast": {
+  "A1T_minus_A0_noverifier_original": {
+   "tasks": 97,
+   "diff": -0.0232,
+   "ci95": [
+    -0.0644,
+    0.0155
+   ]
+  },
+  "A1T_minus_A0_noverifier_corrected": {
+   "tasks": 49,
+   "diff": 0.0204,
+   "ci95": [
+    -0.0459,
+    0.0867
+   ]
+  }
+ },
+ "secondary_contrast": {
+  "A1T_minus_A1_noverifier_original": {
+   "tasks": 97,
+   "diff": -0.018,
+   "ci95": [
+    -0.0593,
+    0.0206
+   ]
+  },
+  "A1T_minus_A1_noverifier_corrected": {
+   "tasks": 49,
+   "diff": 0.0,
+   "ci95": [
+    -0.0663,
+    0.0612
+   ]
+  }
+ },
+ "store_sizes": {
+  "run1": {
+   "store_size_S2_start": 24,
+   "shadow_acquired_S2": 1,
+   "store_size_S2_end": 25
+  },
+  "run2": {
+   "store_size_S2_start": 23,
+   "shadow_acquired_S2": 0,
+   "store_size_S2_end": 23
+  },
+  "run3": {
+   "store_size_S2_start": 25,
+   "shadow_acquired_S2": 2,
+   "store_size_S2_end": 27
+  },
+  "run4": {
+   "store_size_S2_start": 28,
+   "shadow_acquired_S2": 1,
+   "store_size_S2_end": 29
+  }
+ },
+ "retrieval": {
+  "trajectories_with_retrieval": 364,
+  "trajectories_total": 400,
+  "episodes_retrieved_total": 783,
+  "per_run": {
+   "run1": {
+    "with_retrieval": 91,
+    "total": 100,
+    "episodes_retrieved": 192
+   },
+   "run2": {
+    "with_retrieval": 73,
+    "total": 100,
+    "episodes_retrieved": 183
+   },
+   "run3": {
+    "with_retrieval": 100,
+    "total": 100,
+    "episodes_retrieved": 196
+   },
+   "run4": {
+    "with_retrieval": 100,
+    "total": 100,
+    "episodes_retrieved": 212
+   }
+  }
+ },
+ "tokens": {
+  "A1T_mean_tokens_S2": 1892.6,
+  "A0_noverifier_mean_tokens_S2": 1348.7,
+  "A1_noverifier_mean_tokens_S2": 1369.0
+ },
+ "A1T_S2_shadow_acquisition": {
+  "trajectories": 400,
+  "episodes": 4,
+  "unresolved": 0
+ },
+ "spend": {
+  "mini_usd": 18.3909,
+  "calls": 13492,
+  "note": "seeded with mini dry-run cost"
+ }
+}

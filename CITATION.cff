@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite the paper."
-title: "Failure Memory Does Not Help Text-to-SQL Agents: A Compute-Fair, Corrected-Label Evaluation"
+title: "Episodic Failure Memory Does Not Help Text-to-SQL Agents: A Compute-Fair, Corrected-Label Evaluation on BIRD"
 authors:
   - family-names: "Sivaraman"
     given-names: "Mogana Kumaran"

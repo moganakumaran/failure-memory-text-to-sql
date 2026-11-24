@@ -1,7 +1,8 @@
 # Paper #1 — Code
 
-Code for: **"Failure Memory Does Not Help Text-to-SQL Agents: A Compute-Fair,
-Corrected-Label Evaluation"** (Mogana Kumaran Sivaraman, Draft v2, 2026-11-23).
+Code for: **"Episodic Failure Memory Does Not Help Text-to-SQL Agents:
+A Compute-Fair, Corrected-Label Evaluation on BIRD"** (Mogana Kumaran
+Sivaraman, PVLDB revision, 2026-11-23).
 This repository contains only the code. The manuscript, protocol, traces,
 results, and datasets live in the companion project repository.
 
@@ -14,7 +15,9 @@ results, and datasets live in the companion project repository.
   (§3.4) in code.
 - `pilot.py` — the base agent and arms A0–A4 (§3.3): no memory, fingerprinted
   memory, generic memory, generate-and-select, stale memory; drift and
-  undrifted-control modes; `--no-verifier` ablation mode (§5.6).
+  undrifted-control modes; `--no-verifier` ablation mode (§5.6); and the
+  Amendment A15 `--transplant` mode (arm A1-T: verifier off, episode store
+  transplanted from the verifier-on Session-1 journals, §5.6).
 
 **Substrate construction**
 - `build_manifest.py` — task manifest with label status (L1–L4, §3.1).
@@ -34,6 +37,12 @@ results, and datasets live in the companion project repository.
 - `analysis_rep.py` — open-model replication (§5.5).
 - `analysis_a14.py` — Amendment A14: paired drift control (§5.4) and verifier
   ablation (§5.6).
+- `analysis_a15.py` — Amendment A15: store-transplant verifier ablation (§5.6).
+- `mvr_analysis5_changed_gold.py` — PVLDB revision: changed-gold accounting
+  and changed-gold-only sensitivity contrasts (§3.1, §5.1, §5.2, §5.5).
+- `mvr_analysis6_rescore.py` — PVLDB revision: drift-adjusted corrected-gold
+  re-scoring of the stored drift trajectories (§5.4); supersedes the
+  unadjusted corrected-label drift view in `analysis_a14.py`.
 - `analysis_fixes.py` — offline analyses: pass^k (§5.7), fingerprint retrieval
   rates (§5.3), drift-arm acquisition counts.
 - `make_figure1.py`, `make_figure2.py` — the paper's figures.
