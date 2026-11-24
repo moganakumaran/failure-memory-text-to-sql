@@ -1,5 +1,15 @@
 # Paper #1 — Replication Report: OpenRouter Qwen2.5-Coder-32B-Instruct
 
+## Correction note — 2026-11-24
+
+Two statements in this report are corrected here. The body below is preserved unchanged as the as-run record.
+
+1. **Silent-failure decomposition (Acquisition section).** The sentence "Of the 237 S1 failures, 123 were execution errors and 114 silent (accepted but wrong)" is **withdrawn**. The authoritative decomposition (from `pilot_rep_results.json`: 27 episodes acquired, 178 observed failures unresolved) is: 237 failed Session-1 trajectories = **205 agent-observed failures** (execution errors or verifier rejections) + **32 silent failures** (accepted but wrong, never observed by the agent). The acquisition rate is 27 / 205 = **0.132**. The related sentence in the same section — "A1 observed 237 failures across 400 trajectories and acquired only 27 verified episodes — acquisition rate 0.132" — pairs the correct rate with the wrong denominator: 237 counts all failed trajectories, including the 32 the agent never observed. (The printed "27 of 237" framing would give 0.114, not 0.132.)
+2. **Decoding (Run status section).** The phrase "near-deterministic decoding at this model's default temperature" is **wrong**: the replication requests explicitly set **temperature 0** in the request body (harness code). It was the main study (gpt-5-mini) that sent no sampling parameters. A dated inline marker has been added at that sentence.
+
+---
+
+
 Date: 2026-11-22 (evening PT; completed ~23:30 PT). Protocol: Pilot Protocol v2 (frozen) + Amendments A4 (GO margin), A8 (staging), A9 (pivot), A12 (open-model replication via OpenRouter, superseding the Together route), A13 (A3 mercy rule). Model: **qwen/qwen-2.5-coder-32b-instruct** via OpenRouter. Analysis: `hidden_files/analysis_rep.py`, results in `hidden_files/pilot_rep_results.json`; traces in `hidden_files/traces_rep_*.jsonl` (12 files). Corrected-label contrasts use each trace's `pass_corrected` field and the 49 primary S2 tasks whose manifest `label_status` is L1 — the same definitions as the Stage 1/2 analyses.
 
 ## Run status — COMPLETE
@@ -14,7 +24,7 @@ Phase 1 (A0/A1, repeated split, 4 runs each) completed ~22:52 PT: all 1,600 traj
 
 - Spend: **$2.37, 5,804 calls — inside the $10 replication cap** ($7.63 headroom). No spend-limit stall occurred (unlike the mini Stage 2 run).
 - Total trajectories analysed: 2,000 (1,600 Phase 1 + 400 A3).
-- Run-to-run variation is small: per-run S2 pass@1 (original labels) ranges 0.57–0.59 for every arm, consistent with near-deterministic decoding at this model's default temperature.
+- Run-to-run variation is small: per-run S2 pass@1 (original labels) ranges 0.57–0.59 for every arm, consistent with near-deterministic decoding at this model's default temperature. [Correction, 2026-11-24: the replication requests explicitly set temperature 0; see correction note 2 at the top of this report.]
 
 ## Design fidelity
 
