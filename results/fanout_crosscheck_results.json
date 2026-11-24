@@ -1,0 +1,146 @@
+{
+ "corrected_subset_n": 49,
+ "lists": {
+  "june2024_pilot": {
+   "n_records": 93,
+   "by_category": {
+    "benign": 3,
+    "contested": 5,
+    "inflated": 64,
+    "intended": 21
+   },
+   "overlap_with_49_n": 4,
+   "overlap_qids": [
+    208,
+    1037,
+    1243,
+    1490
+   ],
+   "overlap_by_category": {
+    "inflated": [
+     {
+      "qid": 1037,
+      "db_id": "european_football_2",
+      "question": "Calculate the percentage of players who prefer left foot, who were born between 1987 and 1992.",
+      "has_corrected_sql": true
+     },
+     {
+      "qid": 1243,
+      "db_id": "thrombosis_prediction",
+      "question": "For all patients who are older than 55 years old, what is the percentage of female who has abnormal prothrombin time (PT",
+      "has_corrected_sql": true
+     },
+     {
+      "qid": 1490,
+      "db_id": "debit_card_specializing",
+      "question": "How many percent of LAM customer consumed more than 46.73?",
+      "has_corrected_sql": true
+     }
+    ],
+    "intended": [
+     {
+      "qid": 208,
+      "db_id": "toxicology",
+      "question": "Which type of label is the most numerous in atoms with hydrogen?",
+      "has_corrected_sql": false
+     }
+    ]
+   },
+   "overlap_share_of_49_pct": 8.2,
+   "overlap_share_of_list_pct": 4.3,
+   "reworded_qids_in_this_list": [],
+   "overlap_qids_that_are_reworded": [],
+   "overlap_with_primary97_n": 5,
+   "overlap_with_primary97_qids": [
+    208,
+    1037,
+    1218,
+    1243,
+    1490
+   ]
+  },
+  "dev20251106": {
+   "n_records": 127,
+   "by_category": {
+    "benign": 4,
+    "contested": 12,
+    "fixed_in_release": 36,
+    "inflated": 33,
+    "intended": 42
+   },
+   "overlap_with_49_n": 5,
+   "overlap_qids": [
+    273,
+    1037,
+    1040,
+    1243,
+    1490
+   ],
+   "overlap_by_category": {
+    "fixed_in_release": [
+     {
+      "qid": 273,
+      "db_id": "toxicology",
+      "question": "What is the percentage of element chlorine in carcinogenic molecules?",
+      "has_corrected_sql": false
+     },
+     {
+      "qid": 1037,
+      "db_id": "european_football_2",
+      "question": "Calculate the percentage of players who prefer left foot, who were born between 1987 and 1992.",
+      "has_corrected_sql": false
+     },
+     {
+      "qid": 1243,
+      "db_id": "thrombosis_prediction",
+      "question": "For all patients who are older than 55 years old, what is the percentage of female who has abnormal prothrombin time (PT",
+      "has_corrected_sql": false
+     }
+    ],
+    "inflated": [
+     {
+      "qid": 1490,
+      "db_id": "debit_card_specializing",
+      "question": "How many percent of LAM customer consumed more than 46.73?",
+      "has_corrected_sql": true
+     }
+    ],
+    "intended": [
+     {
+      "qid": 1040,
+      "db_id": "european_football_2",
+      "question": "List the top 10 players' names whose heights are above 180 in descending order of average heading accuracy.",
+      "has_corrected_sql": false
+     }
+    ]
+   },
+   "overlap_share_of_49_pct": 10.2,
+   "overlap_share_of_list_pct": 3.9,
+   "reworded_qids_in_this_list": [
+    97,
+    383,
+    386,
+    517,
+    596,
+    640,
+    810,
+    1128,
+    1173,
+    1222,
+    1529
+   ],
+   "overlap_qids_that_are_reworded": [],
+   "overlap_with_primary97_n": 7,
+   "overlap_with_primary97_qids": [
+    273,
+    923,
+    1037,
+    1040,
+    1218,
+    1243,
+    1490
+   ]
+  }
+ },
+ "primary_n": 97
+}

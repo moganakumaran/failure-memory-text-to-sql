@@ -47,6 +47,12 @@ results, and datasets live in the companion project repository.
   Stage 2 traces: original-label contrasts restricted to the 49-task
   corrected subset (§5.2); outputs in `results/b02_subset_results.json`,
   memo in `results/b02_subset_memo.md`.
+- `fanout_crosscheck.py`, `fanout_split.py` — post-hoc cross-check
+  (2026-11-24) of the 49-task corrected subset against Mahran's
+  BIRD-FanOut lists: the §5.2 label flip is not a fan-out artefact
+  (§5.2); outputs in `results/fanout_crosscheck_results.json` and
+  `results/fanout_split_results.json`, memo in
+  `results/fanout_crosscheck_memo.md`.
 - `analysis_fixes.py` — offline analyses: pass^k (§5.7), fingerprint retrieval
   rates (§5.3), drift-arm acquisition counts.
 - `make_figure1.py`, `make_figure2.py` — the paper's figures.
